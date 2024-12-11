@@ -2,6 +2,7 @@ import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { careerMatches } from "@/data/career-matches";
+import { JobModal } from "./details-modal";
 
 export default function CareerMatches() {
   return (
@@ -61,12 +62,7 @@ export default function CareerMatches() {
                 </div>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                <Button
-                  variant="secondary"
-                  className="w-full bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white transition-all"
-                >
-                  View Details
-                </Button>
+                <JobModal details={career.details} />
               </CardFooter>
             </Card>
           ))}
