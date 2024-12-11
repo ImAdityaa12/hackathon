@@ -1,11 +1,11 @@
-interface job {
+export interface job {
   time: string;
   company: string;
   location: string;
   salary: string;
   jobLink: string;
 }
-interface CareerMatch {
+export interface CareerMatch {
   title: string;
   matchPercentage: number;
   requirements: {
@@ -19,7 +19,7 @@ interface CareerMatch {
   details: {
     job_listings: job[];
     skills: string[];
-    career_groth: number;
+    career_growth: number;
   };
 }
 
@@ -62,7 +62,7 @@ export const careerMatches: CareerMatch[] = [
         },
       ],
       skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
-      career_groth: 1,
+      career_growth: 1,
     },
   },
   {
@@ -103,7 +103,7 @@ export const careerMatches: CareerMatch[] = [
         },
       ],
       skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
-      career_groth: 1,
+      career_growth: 1,
     },
   },
   {
@@ -144,7 +144,7 @@ export const careerMatches: CareerMatch[] = [
         },
       ],
       skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
-      career_groth: 1,
+      career_growth: 1,
     },
   },
   {
@@ -185,7 +185,7 @@ export const careerMatches: CareerMatch[] = [
         },
       ],
       skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
-      career_groth: 1,
+      career_growth: 1,
     },
   },
   {
@@ -226,7 +226,7 @@ export const careerMatches: CareerMatch[] = [
         },
       ],
       skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
-      career_groth: 1,
+      career_growth: 1,
     },
   },
 ];
