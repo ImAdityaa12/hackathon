@@ -73,7 +73,7 @@ export default function CareerMatches() {
         </div>
 
         <div className="flex justify-center">
-          <Button className="bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600">
+          <Button className="bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 transition-all">
             View your Career Navigator
           </Button>
         </div>
