@@ -1,3 +1,10 @@
+interface job {
+  time: string;
+  company: string;
+  location: string;
+  salary: string;
+  jobLink: string;
+}
 interface CareerMatch {
   title: string;
   matchPercentage: number;
@@ -8,6 +15,11 @@ interface CareerMatch {
   yourMatch: {
     title: string;
     description: string;
+  };
+  details: {
+    job_listings: job[];
+    skills: string[];
+    career_groth: number;
   };
 }
 
@@ -25,6 +37,33 @@ export const careerMatches: CareerMatch[] = [
       description:
         "Skills in Python, ReactJS, ArcGIS, and data visualization projects.",
     },
+    details: {
+      job_listings: [
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+      ],
+      skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
+      career_groth: 1,
+    },
   },
   {
     title: "AI Research Scientist",
@@ -38,6 +77,33 @@ export const careerMatches: CareerMatch[] = [
       title: "Your Match",
       description:
         "Experience with generative AI, AI-driven speech projects, and teaching complex AI concepts.",
+    },
+    details: {
+      job_listings: [
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+      ],
+      skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
+      career_groth: 1,
     },
   },
   {
@@ -53,6 +119,33 @@ export const careerMatches: CareerMatch[] = [
       description:
         "Experience in dynamic data visualization and simplification of complex data for presentations.",
     },
+    details: {
+      job_listings: [
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+      ],
+      skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
+      career_groth: 1,
+    },
   },
   {
     title: "Systems Analyst",
@@ -67,6 +160,33 @@ export const careerMatches: CareerMatch[] = [
       description:
         "Development of backend systems using various APIs and integration of complex software solutions.",
     },
+    details: {
+      job_listings: [
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+      ],
+      skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
+      career_groth: 1,
+    },
   },
   {
     title: "Project Manager",
@@ -80,6 +200,33 @@ export const careerMatches: CareerMatch[] = [
       title: "Your Match",
       description:
         "Managed AI-driven project implementations and coordinated with educational staff for system integration.",
+    },
+    details: {
+      job_listings: [
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+        {
+          time: "5 hours ago",
+          company: "XYZ Company",
+          location: "New York, NY",
+          salary: "$70,000 - $90,000",
+          jobLink: "https://www.job.com/job/654321",
+        },
+      ],
+      skills: ["Python", "ReactJS", "ArcGIS", "Data Visualization"],
+      career_groth: 1,
     },
   },
 ];
